@@ -536,8 +536,9 @@
 
 
 <body>
-<div id= "mobile">
-</div>
+<div class="visible-md visible-lg" id="large-desktop-only-visible"></div>
+<div class="visible-sm visible-md visible-lg" id="desktop-only-visible"></div>
+<div class="visible-xs" id="mobile-only-visible"></div>
     
 <div class = "container-fluid">
     <div class = "form-row justify-content-center">
@@ -11276,9 +11277,10 @@
             
             var paginator_count = 6;
 
-            if( $('#some-element').css('display')=='none') {
-                paginator_count = 4;     
-            }            
+            if ($('#mobile-only-visible').is(':visible'))
+		    {
+		        paginator_count = 4;
+		    }
 
             
             var college_array = [];   
