@@ -525,6 +525,10 @@
             
         }
 
+        select {
+            width
+        }
+
 
     </style>
 
@@ -535,7 +539,7 @@
 
 <body>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
 
           // when a message is received from the page code
@@ -554,24 +558,24 @@
             }
       });
 
-</script>
+</script> -->
 <div class = "container-fluid">
     <div class = "row pl-3 ml-5 ">
 
-    <div class = "col">
+    <div class = "col-2">
     <label for="colleges"> Filter by University </label> <br>
-    <select name="colleges" id="colleges">
+    <select class = "filter" name="colleges" id="colleges">
     </select>
     </div>
-<div class = "col">
+<div class = "col-2">
     <label for="majors"> Filter by Major </label> <br>
-    <select name="majors" id="majors">
+    <select  class = "filter" name="majors" id="majors">
     </select>
 </div>
-<div class = "col">
+<div class = "col-2">
 
     <label for="grad"> Filter by Year </label> <br>
-    <select name="grad" id="grad">
+    <select class = "filter" name="grad" id="grad">
         <option value= All-Years> All Years </option>
         <option value="2024"> First Year </option>
         <option value="2023"> Sophomore </option>
@@ -580,9 +584,9 @@
         <option value="2020-and-Before"> Recent Graduate </option>
     </select>
 </div>
-<div class = "col">
+<div class = "col-2">
     <label for="interests"> Filter by Interests</label> <br>
-    <select name="interests" id="interests">
+    <select class = "filter" name="interests" id="interests">
         <option value= All-Interests> All Interests </option>
         <option value="Arts"> Arts </option>
         <option value="Business-and-Entrepreneurship"> Business and Entrepreneurship</option>
@@ -604,9 +608,9 @@
         <option value="Research"> Research </option>
     </select>
 </div>
-<div class = "col">
+<div class = "col-2">
     <label for="highschool"> Filter by Attended High School Size</label> <br>
-    <select name="highschool" id="highschool">
+    <select class = "filter" name="highschool" id="highschool">
         <option value= All-Schools> All Schools </option>
         <option value="Small-Public-High-School"> Small Public High School </option>
         <option value="Medium-Sized-Public-High-School"> Medium-Sized Public High School </option>
@@ -617,9 +621,9 @@
         <option value="Charter-School"> Charter School</option>
     </select>
 </div>
-<div class = "col">
+<div class = "col-2">
     <label for="home"> Filter by Home State </label> <br>
-    <select name="home" id="home">
+    <select class = "filter" name="home" id="home">
         <option value="All-States">All States</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
