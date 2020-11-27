@@ -105,10 +105,7 @@
 
 
 
-        .card {
-                width: 30rem;
-                margin:auto;
-            }
+
 
 
 
@@ -384,9 +381,6 @@
 
             }
 
-            .card {
-                width: 30rem;
-            }
 
             h1 strong {
 
@@ -541,7 +535,17 @@
 
 <body>
 
-    
+<script type="text/javascript">
+      // when a message is received from the page code
+      window.onmessage = (event) => {
+        if (event.data) {
+          var divs = document.querySelectorAll('.card');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.width = "20rem";
+            }
+        }
+      };
+</script>
 <div class = "container-fluid">
     <div class = "row pl-3 ml-5 ">
 
