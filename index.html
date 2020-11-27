@@ -11396,12 +11396,13 @@
             openModalOnHash()
 
             function openModalOnHash() {
-            	var parent_url = window.parent.location
+            	var parental = (window.parent.location).toString()
             	var url = (window.location != window.parent.location)? document.referrer : document.location.href;
+            	url.toString()
             	console.log("url", url)
-            	console.log("parent_url", url)
+            	console.log("parent_url", parental)
             	console.log(url.split("#")[1])
-            	console.log(parent_url.split("#")[1])
+            	console.log(parental.split("#")[1])
             	console.log(window.location)
             	console.log(window.location.hash)
             	console.log(window.location.hash.substring(1))
