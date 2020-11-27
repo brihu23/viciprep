@@ -539,10 +539,14 @@
       // when a message is received from the page code
       window.onmessage = (event) => {
         if (event.data) {
-          var divs = document.querySelectorAll('.card');
+            alert(event.data)
+            var divs = document.querySelectorAll('.card');
             for (var i = 0; i < divs.length; i++) {
-                divs[i].style.width = "20rem";
+                divs[i].style.width = "10rem";
             }
+        else {
+            alert("no data")
+        }
         }
       };
 </script>
