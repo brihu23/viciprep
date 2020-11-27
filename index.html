@@ -11273,14 +11273,17 @@
 
 	</script>
 	<script >
-		$(window).on("message onmessage", function(e) {
-            		console.log("message!")
-	    			var data = e.originalEvent.data;
-	    			console.log(data)
-				});		
+				
 	</script>
     <script>
         $(document).ready(function() {
+
+        	$(window).on("message onmessage", function(e) {
+
+            		alert("message!")
+	    			var data = e.originalEvent.data;
+	    			alert(data)
+			});
 
             
             var paginator_count = 6;
