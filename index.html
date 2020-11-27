@@ -11396,6 +11396,8 @@
             openModalOnHash()
 
             function openModalOnHash() {
+            	var url = (window.location != window.parent.location)? document.referrer : document.location.href;
+            	console.log("url", url)
             	console.log(window.location)
             	console.log(window.location.hash)
             	console.log(window.location.hash.substring(1))
