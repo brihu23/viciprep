@@ -560,124 +560,125 @@
 
 </script> -->
 <div class = "container-fluid">
-    <div class = "row mx-auto">
 
-    <div class = "col-2">
-    <label for="colleges"> Filter by University </label> <br>
-    <select class = "filter" name="colleges" id="colleges">
-    </select>
-    </div>
-<div class = "col-2">
-    <label for="majors"> Filter by Major </label> <br>
-    <select  class = "filter" name="majors" id="majors">
-    </select>
-</div>
-<div class = "col-2">
+    <div class = "form-row justify-content-center">
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="colleges"> Filter by University </label> <br>
+            <select class = "form-control mx-auto filter" name="colleges" id="colleges">
+            </select>
+        </div>
 
-    <label for="grad"> Filter by Year </label> <br>
-    <select class = "filter" name="grad" id="grad">
-        <option value= All-Years> All Years </option>
-        <option value="2024"> First Year </option>
-        <option value="2023"> Sophomore </option>
-        <option value="2022"> Junior </option>
-        <option value="2021"> Senior </option>
-        <option value="2020-and-Before"> Recent Graduate </option>
-    </select>
-</div>
-<div class = "col-2">
-    <label for="interests"> Filter by Interests</label> <br>
-    <select class = "filter" name="interests" id="interests">
-        <option value= All-Interests> All Interests </option>
-        <option value="Arts"> Arts </option>
-        <option value="Business-and-Entrepreneurship"> Business and Entrepreneurship</option>
-        <option value="Collegiate-Sports-and-Athletics"> Collegiate Sports and Athletics </option>
-        <option value="Comedy"> Comedy </option>
-        <option value="Culinary-Activites"> Culinary Activites </option>
-        <option value="Cultural-Activities"> Cultural Activities </option>
-        <option value="Games"> Games </option>
-        <option value="Media-and-Journalism"> Media and Journalism </option>
-        <option value="Music"> Music </option>
-        <option value="Outdoors"> Outdoors </option>
-        <option value="Politics-and-Government"> Politics and Government </option>
-        <option value="Public Service"> Public Service </option>
-        <option value="Religion"> Religion </option>
-        <option value="Science and Engineering"> Science and Engineering </option>
-        <option value="Social Groups and Greek Life"> Social Groups and Greek Life</option>
-        <option value="Recreational-and-Professional Sports"> Recreational and Professional Sports</option>
-        <option value="Theatre-and-Performance "> Theatre and Performance </option>
-        <option value="Research"> Research </option>
-    </select>
-</div>
-<div class = "col-2">
-    <label for="highschool"> Filter by High School</label> <br>
-    <select class = "filter" name="highschool" id="highschool">
-        <option value= All-Schools> All Schools </option>
-        <option value="Small-Public-High-School"> Small Public High School </option>
-        <option value="Medium-Sized-Public-High-School"> Medium-Sized Public High School </option>
-        <option value="Large-Public-High-School"> Large Public High School </option>
-        <option value="Small-Private-High-School"> Small Private High School </option>
-        <option value="Medium-Sized-Private-High-School"> Medium-Sized Private High School </option>
-        <option value="Large-Private-High-School"> Large Private High School</option>
-        <option value="Charter-School"> Charter School</option>
-    </select>
-</div>
-<div class = "col-2">
-    <label for="home"> Filter by Home State </label> <br>
-    <select class = "filter" name="home" id="home">
-        <option value="All-States">All States</option>
-        <option value="AL">Alabama</option>
-        <option value="AK">Alaska</option>
-        <option value="AZ">Arizona</option>
-        <option value="AR">Arkansas</option>
-        <option value="CA">California</option>
-        <option value="CO">Colorado</option>
-        <option value="CT">Connecticut</option>
-        <option value="DE">Delaware</option>
-        <option value="DC">District of Columbia</option>
-        <option value="FL">Florida</option>
-        <option value="GA">Georgia</option>
-        <option value="HI">Hawaii</option>
-        <option value="ID">Idaho</option>
-        <option value="IL">Illinois</option>
-        <option value="IN">Indiana</option>
-        <option value="IA">Iowa</option>
-        <option value="KS">Kansas</option>
-        <option value="KY">Kentucky</option>
-        <option value="LA">Louisiana</option>
-        <option value="ME">Maine</option>
-        <option value="MD">Maryland</option>
-        <option value="MA">Massachusetts</option>
-        <option value="MI">Michigan</option>
-        <option value="MN">Minnesota</option>
-        <option value="MS">Mississippi</option>
-        <option value="MO">Missouri</option>
-        <option value="MT">Montana</option>
-        <option value="NE">Nebraska</option>
-        <option value="NV">Nevada</option>
-        <option value="NH">New Hampshire</option>
-        <option value="NJ">New Jersey</option>
-        <option value="NM">New Mexico</option>
-        <option value="NY">New York</option>
-        <option value="NC">North Carolina</option>
-        <option value="ND">North Dakota</option>
-        <option value="OH">Ohio</option>
-        <option value="OK">Oklahoma</option>
-        <option value="OR">Oregon</option>
-        <option value="PA">Pennsylvania</option>
-        <option value="RI">Rhode Island</option>
-        <option value="SC">South Carolina</option>
-        <option value="SD">South Dakota</option>
-        <option value="TN">Tennessee</option>
-        <option value="TX">Texas</option>
-        <option value="UT">Utah</option>
-        <option value="VT">Vermont</option>
-        <option value="VA">Virginia</option>
-        <option value="WA">Washington</option>
-        <option value="WV">West Virginia</option>
-        <option value="WI">Wisconsin</option>
-        <option value="WY">Wyoming</option>
-    </select>
-</div>
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="majors"> Filter by Major </label> <br>
+            <select  class = "form-control mx-auto filter" name="majors" id="majors">
+            </select>
+        </div>
+
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="grad"> Filter by Year </label> <br>
+            <select class = "form-control mx-auto filter" name="grad" id="grad">
+                <option value= All-Years> All Years </option>
+                <option value="2024"> First Year </option>
+                <option value="2023"> Sophomore </option>
+                <option value="2022"> Junior </option>
+                <option value="2021"> Senior </option>
+                <option value="2020-and-Before"> Recent Graduate </option>
+            </select>
+        </div>
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="interests"> Filter by Interests</label> <br>
+            <select class = "form-control mx-auto filter" name="interests" id="interests">
+                <option value= All-Interests> All Interests </option>
+                <option value="Arts"> Arts </option>
+                <option value="Business-and-Entrepreneurship"> Business and Entrepreneurship</option>
+                <option value="Collegiate-Sports-and-Athletics"> Collegiate Sports and Athletics </option>
+                <option value="Comedy"> Comedy </option>
+                <option value="Culinary-Activites"> Culinary Activites </option>
+                <option value="Cultural-Activities"> Cultural Activities </option>
+                <option value="Games"> Games </option>
+                <option value="Media-and-Journalism"> Media and Journalism </option>
+                <option value="Music"> Music </option>
+                <option value="Outdoors"> Outdoors </option>
+                <option value="Politics-and-Government"> Politics and Government </option>
+                <option value="Public Service"> Public Service </option>
+                <option value="Religion"> Religion </option>
+                <option value="Science and Engineering"> Science and Engineering </option>
+                <option value="Social Groups and Greek Life"> Social Groups and Greek Life</option>
+                <option value="Recreational-and-Professional Sports"> Recreational and Professional Sports</option>
+                <option value="Theatre-and-Performance "> Theatre and Performance </option>
+                <option value="Research"> Research </option>
+            </select>
+        </div>
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="highschool"> Filter by Attended High School Size</label> <br>
+            <select class = "form-control mx-auto filter" name="highschool" id="highschool">
+                <option value= All-Schools> All Schools </option>
+                <option value="Small-Public-High-School"> Small Public High School </option>
+                <option value="Medium-Sized-Public-High-School"> Medium-Sized Public High School </option>
+                <option value="Large-Public-High-School"> Large Public High School </option>
+                <option value="Small-Private-High-School"> Small Private High School </option>
+                <option value="Medium-Sized-Private-High-School"> Medium-Sized Private High School </option>
+                <option value="Large-Private-High-School"> Large Private High School</option>
+                <option value="Charter-School"> Charter School</option>
+            </select>
+        </div>
+        <div class = "col-md-4 col-sm-12 form-group text-center">
+            <label for="home"> Filter by Home State </label> <br>
+            <select class = "form-control mx-auto filter" name="home" id="home">
+                <option value="All-States">All States</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+        </div>
     </div>
     <br>
     <div class = "row">
