@@ -11296,6 +11296,8 @@
 
             })
 
+            window()
+
             
 
             
@@ -11934,6 +11936,14 @@
                     }
                 }
                 return false;
+            }
+
+            function window (){
+            	$(window).on("message onmessage", function(e) {
+            		console.log("message!")
+	    			var data = e.originalEvent.data;
+	    			console.log(data)
+				});
             }
 
 
