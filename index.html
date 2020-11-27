@@ -12018,8 +12018,11 @@
     <script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
 			console.log('schmoop')
+			alert("boop")
 			window.onmessage = (event) => {
+				alert(event)
 			    if (event.data) {
+			    	alert(event.data)
 			       console.log(event.data)
 			    }
 			  };
