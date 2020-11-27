@@ -11396,23 +11396,23 @@
             available_times()  
             //openModalOnHash()
 
-            function openModalOnHash() {
-            	var parental = (window.parent.location).toString()
-            	var url = (window.location != window.parent.location)? document.referrer : document.location.href;
-            	url.toString()
-            	console.log("url", url)
-            	console.log("parent_url", parental)
-            	console.log(url.split("#")[1])
-            	console.log(parental.split("#")[1])
-            	console.log(window.location)
-            	console.log(window.location.hash)
-            	console.log(window.location.hash.substring(1))
-              if(window.location.hash) {
-                var hash = window.location.hash.substring(1);
-                console.log(hash)
-                $('#'+hash).modal('show');
-              }
-            }
+            // function openModalOnHash() {
+            // 	var parental = (window.parent.location).toString()
+            // 	var url = (window.location != window.parent.location)? document.referrer : document.location.href;
+            // 	url.toString()
+            // 	console.log("url", url)
+            // 	console.log("parent_url", parental)
+            // 	console.log(url.split("#")[1])
+            // 	console.log(parental.split("#")[1])
+            // 	console.log(window.location)
+            // 	console.log(window.location.hash)
+            // 	console.log(window.location.hash.substring(1))
+            //   if(window.location.hash) {
+            //     var hash = window.location.hash.substring(1);
+            //     console.log(hash)
+            //     $('#'+hash).modal('show');
+            //   }
+            // }
 
 
   
