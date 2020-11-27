@@ -1,2 +1,2 @@
 # viciprep
-Static HTML Page
+Repo to manage updates in an asynchronous manner
