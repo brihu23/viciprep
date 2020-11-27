@@ -11272,6 +11272,13 @@
 
 
 	</script>
+	<script >
+		$(window).on("message onmessage", function(e) {
+            		console.log("message!")
+	    			var data = e.originalEvent.data;
+	    			console.log(data)
+				});		
+	</script>
     <script>
         $(document).ready(function() {
 
@@ -11296,7 +11303,7 @@
 
             })
 
-            window()
+            //window()
 
             
 
@@ -11938,13 +11945,13 @@
                 return false;
             }
 
-            function window (){
-            	$(window).on("message onmessage", function(e) {
-            		console.log("message!")
-	    			var data = e.originalEvent.data;
-	    			console.log(data)
-				});
-            }
+    //         function window (){
+    //         	$(window).on("message onmessage", function(e) {
+    //         		console.log("message!")
+	   //  			var data = e.originalEvent.data;
+	   //  			console.log(data)
+				// });
+    //         }
 
 
             function paginator_generator(){
