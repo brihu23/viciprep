@@ -11276,8 +11276,11 @@
 			
 			if (event.data) {
 				var hash = event.data
+				alert(hash)
 				hash = hash.split("#").[1]
-				document.getElementById(hash).showModal()			       
+				alert(hash)
+				alert(document.getElementById(hash))
+				document.getElementById(hash).showModal()	       
 		       
 		    }
 		  };
