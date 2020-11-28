@@ -11270,19 +11270,17 @@
 </div>
 
 
-    <script type="text/javascript">
-		
+    <script type="text/javascript">				
 			
+		window.onmessage = (event) => {
 			
-			window.onmessage = (event) => {
-				
-				alert("event", event)
-				alert("eventdata" ,event.data)
-			    if (event.data) {
-			       alert("inside", event.data)
-			       console.log(event.data)
-			    }
-			  };
+			if (event.data) {
+				var hash = event.data
+				hash = hash.split("#").[1]
+				document.getElementById(hash).showModal()			       
+		       
+		    }
+		  };
 	
 	</script>
 				
