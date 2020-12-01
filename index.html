@@ -14050,7 +14050,7 @@
                 console.log("start_pagination")
                 //$('#pagination').append('<li class="page-item"><a class="page-link" id = "previous" href="#">Previous</a></li>')    
                 if (current_show.length/paginator_count === 0){
-                    alert("Apologies! Right now we don't have any mentors matching your search, but we're hard at work bring so this doesn't happen again. Try searching with different filters - don't forget to invite a friend to the conversation 😁 Hope you have a great day 🤩")
+                     alert("Apologies! Right now we don't have any mentors matching your search, but we're hard at work bring so this doesn't happen again. Try searching again with different filters!")
                 }
                 for (var i = 0; i < Math.ceil(current_show.length/paginator_count); i++){
                     $('#pagination').append('<li class="page-item"><a id = "page-' + (i+1) + '"' +  'class="page-link" href="#">' + (i+1) + '</a></li>')
