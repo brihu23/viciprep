@@ -46064,7 +46064,7 @@ music (currently obsessed with Amine), and chill with friends + family. </p>
                     var used_dates = []
                    
                     //two airtable calls -- one to get data from the 'invite a friend' database and the other for the normal database
-                    base1('Table 1').select({
+                    base('Table 2').select({
                     filterByFormula: filter}).eachPage(function page(records, fetchNextPage) {
                         // This function (`page`) will get called for each page of records.
                         records.forEach(function(record) {
@@ -46282,7 +46282,7 @@ music (currently obsessed with Amine), and chill with friends + family. </p>
                                         });
                                     //else send data to the 'invite a friend' database
                                     } else {
-                                        console.log("base1")
+                                        // console.log("base1")
                                         base('Table 2').create([
                                           {
                                             "fields": {
